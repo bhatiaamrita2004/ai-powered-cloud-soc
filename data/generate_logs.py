@@ -7,7 +7,7 @@ data transfers). A hidden `is_anomaly` ground-truth label is kept so the
 detection pipeline's performance can be evaluated later -- it is NOT used
 as a training input (the model is unsupervised).
 """
-
+import os
 import json
 import random
 import uuid
@@ -133,7 +133,7 @@ def main():
     random.shuffle(all_events)
     all_events.sort(key=lambda e: e["eventTime"])
 
-    out_path = "/home/claude/soc-project/data/synthetic_logs.json"
+    out_path= os.path.join(os.path.dirname(__file__), "synthetic_logs.json")
     with open(out_path, "w") as f:
         json.dump(all_events, f, indent=2)
 
