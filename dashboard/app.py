@@ -13,8 +13,8 @@ st.title("🛡️ AI-Powered Cloud SOC & Threat Detection Dashboard")
 
 # ---- Fetch data ----
 try:
-    metrics = requests.get(f"{API_BASE}/metrics", timeout=5).json()
-    alerts = requests.get(f"{API_BASE}/alerts", timeout=5).json()
+    alerts = requests.get(f"{API_BASE}/alerts", timeout=30).json()metrics = requests.get(f"{API_BASE}/metrics", timeout=30).json()
+    alerts = requests.get(f"{API_BASE}/alerts", timeout=30).json()
 except requests.exceptions.ConnectionError:
     st.error("⚠️ Can't reach the API. Start it first: `uvicorn src.api:app --reload`")
     st.stop()
