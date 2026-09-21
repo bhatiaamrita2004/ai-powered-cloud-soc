@@ -6,7 +6,7 @@ Run the API first (uvicorn src.api:app), then: streamlit run dashboard/app.py
 import requests
 import streamlit as st
 
-API_BASE = "http://localhost:8000"
+API_BASE = os.getenv("API_BASE_URL", "http://localhost:8000")
 
 st.set_page_config(page_title="AI-Powered Cloud SOC", layout="wide")
 st.title("🛡️ AI-Powered Cloud SOC & Threat Detection Dashboard")
