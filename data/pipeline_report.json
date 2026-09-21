@@ -1,0 +1,84 @@
+{
+  "metrics": {
+    "true_positives": 35,
+    "false_positives": 0,
+    "false_negatives": 4,
+    "true_negatives": 247,
+    "precision": 1.0,
+    "recall": 0.897,
+    "f1_score": 0.946,
+    "false_positive_rate": 0.0
+  },
+  "incident_count": 35,
+  "top_incident": {
+    "incident_id": "INC-user_009-2026-09-16",
+    "user": "user_009",
+    "day": "2026-09-16",
+    "risk_score": 85.1,
+    "severity": "Critical",
+    "signals": [
+      "privilege_escalation",
+      "data_exfiltration",
+      "high_activity_volume"
+    ],
+    "mitre_techniques": [
+      {
+        "signal": "privilege_escalation",
+        "technique_id": "T1098",
+        "technique_name": "Account Manipulation",
+        "tactic": "Privilege Escalation"
+      },
+      {
+        "signal": "data_exfiltration",
+        "technique_id": "T1537",
+        "technique_name": "Transfer Data to Cloud Account",
+        "tactic": "Exfiltration"
+      },
+      {
+        "signal": "high_activity_volume",
+        "technique_id": "T1078",
+        "technique_name": "Valid Accounts",
+        "tactic": "Discovery"
+      }
+    ],
+    "features": {
+      "event_count": 18,
+      "login_count": 1,
+      "distinct_countries": 1,
+      "off_hours_ratio": 0.44,
+      "privesc_call_count": 6,
+      "total_bytes_transferred": 128486044
+    },
+    "event_ids": [
+      "01b3ae64-a3b9-4569-87b0-9cc5318ea651",
+      "08546183-1e2d-44af-85a8-50a270972b4f",
+      "ea8c1118-86d1-4376-8f3e-9144fd82efc1",
+      "af4a880b-153e-42ee-9ca8-527aeb25dc20",
+      "4c22d8a1-9c07-46be-bf93-75ff3c12e9a3",
+      "5ae620ea-38fc-4997-a29c-aed795fcb28b",
+      "2ffed830-4950-4ab2-a621-91b3f478fc3d",
+      "95c9d83f-92f6-42a6-a63d-060a1fedcf77",
+      "0b00408c-0645-4764-acd6-6d5b85c45ee9",
+      "5ce1ced0-f47a-4eea-9ec3-17c6fe5c7408",
+      "6619df97-c80a-4eca-a695-f04cc527d64c",
+      "daa9d0f0-a5c3-4f82-bb41-8077969bf267",
+      "e4661ac4-1de8-4fda-bdad-24fed45deb33",
+      "c0ca29d5-e28d-4743-b5d4-2aed0b5333a1",
+      "7c4c08a6-4639-40f3-8206-3c315a7ad7ff",
+      "beaa1e91-ea2d-463a-b52f-63b63c37e76c",
+      "9e63c74c-9248-46dd-92a1-33f6617eb797",
+      "5e1082b7-39f2-408a-bc28-42d4809ee364"
+    ]
+  },
+  "top_investigation": {
+    "timeline": "- 2026-09-16T00:04:13.039753Z: GetObject from 156.172.33.43 (US)\n- 2026-09-16T00:05:13.039753Z: GetObject from 116.234.18.225 (US)\n- 2026-09-16T00:06:13.039753Z: GetObject from 46.120.205.229 (US)\n- 2026-09-16T00:07:13.039753Z: GetObject from 51.95.13.231 (US)\n- 2026-09-16T00:08:13.039753Z: GetObject from 200.39.32.236 (US)\n- 2026-09-16T00:26:13.020179Z: GetSecretValue from 155.167.232.14 (US)\n- 2026-09-16T01:46:13.020179Z: ConsoleLogin from 216.250.110.210 (US)\n- 2026-09-16T02:03:13.020179Z: PutObject from 179.248.62.14 (US)\n- 2026-09-16T07:35:13.020179Z: DescribeSecurityGroups from 21.20.221.165 (US)\n- 2026-09-16T08:28:13.020179Z: PutObject from 172.189.67.21 (US)\n- 2026-09-16T09:02:13.020179Z: ListBucket from 180.206.228.105 (US)\n- 2026-09-16T10:04:13.020179Z: DescribeSecurityGroups from 214.64.230.49 (US)\n- 2026-09-16T20:04:13.039753Z: CreateLoginProfile from 181.215.192.151 (US)\n- 2026-09-16T20:06:13.039753Z: CreateLoginProfile from 165.233.45.151 (US)\n- 2026-09-16T20:08:13.039753Z: PutUserPolicy from 138.187.196.127 (US)\n- 2026-09-16T20:10:13.039753Z: PutUserPolicy from 85.52.150.10 (US)\n- 2026-09-16T20:12:13.039753Z: CreateLoginProfile from 80.99.89.97 (US)\n- 2026-09-16T20:14:13.039753Z: AttachUserPolicy from 48.114.150.72 (US)",
+    "summary": "User user_009 triggered a critical-severity alert (risk score 85.1/100) on 2026-09-16, matching signal(s): privilege_escalation, data_exfiltration, high_activity_volume. This maps to MITRE technique(s): T1098 (Account Manipulation), T1537 (Transfer Data to Cloud Account), T1078 (Valid Accounts).",
+    "recommended_steps": [
+      "Verify whether user_009's activity on 2026-09-16 was authorized (check with the user or their manager).",
+      "Cross-reference the source IP address(es) against known corporate IP ranges / VPN exit nodes.",
+      "Review recent IAM policy changes for this user for unauthorized privilege grants.",
+      "If confirmed malicious, rotate this user's credentials and review CloudTrail for lateral movement."
+    ],
+    "generated_by": "template_fallback (no LLM API key configured)"
+  }
+}

@@ -1,0 +1,1561 @@
+[
+  {
+    "incident_id": "INC-user_009-2026-09-16",
+    "user": "user_009",
+    "day": "2026-09-16",
+    "risk_score": 85.1,
+    "severity": "Critical",
+    "signals": [
+      "privilege_escalation",
+      "data_exfiltration",
+      "high_activity_volume"
+    ],
+    "mitre_techniques": [
+      {
+        "signal": "privilege_escalation",
+        "technique_id": "T1098",
+        "technique_name": "Account Manipulation",
+        "tactic": "Privilege Escalation"
+      },
+      {
+        "signal": "data_exfiltration",
+        "technique_id": "T1537",
+        "technique_name": "Transfer Data to Cloud Account",
+        "tactic": "Exfiltration"
+      },
+      {
+        "signal": "high_activity_volume",
+        "technique_id": "T1078",
+        "technique_name": "Valid Accounts",
+        "tactic": "Discovery"
+      }
+    ],
+    "features": {
+      "event_count": 18,
+      "login_count": 1,
+      "distinct_countries": 1,
+      "off_hours_ratio": 0.44,
+      "privesc_call_count": 6,
+      "total_bytes_transferred": 128486044
+    },
+    "event_ids": [
+      "91bacdee-2cbd-4626-b38c-4a7bb261d219",
+      "e68d34e8-8925-4475-a6ed-138613ddcb93",
+      "caf8a6bb-fb06-43d6-8d45-ab071f20982f",
+      "9d7b92e4-c5cb-4fa2-ba49-249f2c2f1076",
+      "fb4a4d38-471c-4623-b3ed-14df5af18a3a",
+      "9d64fbf7-df3f-4ae4-8d5d-5c97583916ae",
+      "5c96eb90-1833-4faa-aa05-49739f78fdce",
+      "06b0bf3e-04dc-430b-b6ec-5b10038e5bc5",
+      "ee4ce9b4-e407-479e-a980-c3ceb6a0397e",
+      "26efaac6-6615-4366-98b1-5d87b13a2169",
+      "c2575394-256d-4a22-b4c2-498e252e43a7",
+      "121b1de5-8279-4bb8-9cc8-c2c929978ce7",
+      "b0c177df-096f-43df-bf62-86dcd019ad42",
+      "c3804e19-0141-4b1e-9cf3-15d2c5e46042",
+      "e082a0ab-f5a1-4afd-bc2c-bdc744ee2aa9",
+      "13d278ac-30ca-4b1b-be8d-2aeaa551b89d",
+      "c7364b23-98a8-4d93-91c4-582a16a87f1c",
+      "5f76fb1a-c717-4132-83ca-9729258a4fd2"
+    ]
+  },
+  {
+    "incident_id": "INC-user_016-2026-09-19",
+    "user": "user_016",
+    "day": "2026-09-19",
+    "risk_score": 81.2,
+    "severity": "Critical",
+    "signals": [
+      "data_exfiltration",
+      "high_activity_volume"
+    ],
+    "mitre_techniques": [
+      {
+        "signal": "data_exfiltration",
+        "technique_id": "T1537",
+        "technique_name": "Transfer Data to Cloud Account",
+        "tactic": "Exfiltration"
+      },
+      {
+        "signal": "high_activity_volume",
+        "technique_id": "T1078",
+        "technique_name": "Valid Accounts",
+        "tactic": "Discovery"
+      }
+    ],
+    "features": {
+      "event_count": 18,
+      "login_count": 0,
+      "distinct_countries": 1,
+      "off_hours_ratio": 0.39,
+      "privesc_call_count": 0,
+      "total_bytes_transferred": 195740864
+    },
+    "event_ids": [
+      "a129335a-20a9-4abf-bbb7-b1f2970c5c03",
+      "57f07fac-805e-490a-9a6d-7fa02c324a6d",
+      "b1c3d259-1274-4674-b9c7-549a98bb93a7",
+      "ddcbd802-6479-4899-b1ae-7ee2caefb828",
+      "50d0bd6f-a121-42c1-8ef6-ac46fc36d34c",
+      "589d0f66-8ab7-4541-ba51-5d2e17ac5170",
+      "acf1e313-c539-4623-8d28-494dcccbac54",
+      "9c9a0b8d-3f8c-44f3-bbd5-9bafd594e13f",
+      "15fd659a-36cd-4789-84a5-b07435f2eeb9",
+      "115f9536-e082-4f69-b416-f3d866add5d8",
+      "7400f96e-7e0c-455f-98df-5b4056451c31",
+      "1d1ddd4c-3049-4fd0-a011-204ab1421d77",
+      "d67d10dc-1594-4666-b8a0-4270e66d76c3",
+      "8f00b316-8238-4db7-8394-5f9366a69d81",
+      "0226b8b2-37aa-4c5b-b829-8d7f3e3adffa",
+      "55c70541-aadb-40e9-9612-40e6f1dc73e6",
+      "5d504db1-31ce-45ba-acc6-d6a33c90d780",
+      "ec86af0f-ac83-4aeb-b24b-8ace487a37e5"
+    ]
+  },
+  {
+    "incident_id": "INC-user_020-2026-09-16",
+    "user": "user_020",
+    "day": "2026-09-16",
+    "risk_score": 78.2,
+    "severity": "Critical",
+    "signals": [
+      "off_hours_login",
+      "data_exfiltration",
+      "high_activity_volume"
+    ],
+    "mitre_techniques": [
+      {
+        "signal": "off_hours_login",
+        "technique_id": "T1078.004",
+        "technique_name": "Valid Accounts: Cloud Accounts",
+        "tactic": "Initial Access"
+      },
+      {
+        "signal": "data_exfiltration",
+        "technique_id": "T1537",
+        "technique_name": "Transfer Data to Cloud Account",
+        "tactic": "Exfiltration"
+      },
+      {
+        "signal": "high_activity_volume",
+        "technique_id": "T1078",
+        "technique_name": "Valid Accounts",
+        "tactic": "Discovery"
+      }
+    ],
+    "features": {
+      "event_count": 16,
+      "login_count": 2,
+      "distinct_countries": 1,
+      "off_hours_ratio": 0.88,
+      "privesc_call_count": 0,
+      "total_bytes_transferred": 257710266
+    },
+    "event_ids": [
+      "c76affee-3dfa-4516-bd70-c652f43f6b22",
+      "0d6c44c2-f544-4d1f-9aed-27a390ae7467",
+      "fccc6f84-b48c-4465-88c0-a1fbee9e0889",
+      "862032e3-e998-4685-b037-7210942107d5",
+      "611314cd-5c25-417f-a8e6-ce3aa3e9060d",
+      "07371790-1088-44f8-907a-482f7d6aed6d",
+      "17f9d804-056c-47c3-b838-2d3066b9e883",
+      "5796ebd7-b3df-4b5a-b4f8-c3da4dd71d25",
+      "4dd4a4bc-a8c5-4a7a-b479-8fdd6a95279c",
+      "c87c1012-b8bd-4991-9017-fdebcae1948d",
+      "ba49eaeb-35e6-4870-82b1-77ace896edf2",
+      "52344bb2-86e1-4087-b5f6-11c0b3459912",
+      "d6b9ddb5-e735-4483-8329-6bde66660465",
+      "f8f510af-9332-47af-9baa-34d59ea6ce1c",
+      "ff4f10a3-4172-4564-8f3c-3d1360632c47",
+      "e274f60e-97e2-412b-8838-ffc17e396555"
+    ]
+  },
+  {
+    "incident_id": "INC-user_015-2026-09-09",
+    "user": "user_015",
+    "day": "2026-09-09",
+    "risk_score": 76.2,
+    "severity": "Critical",
+    "signals": [
+      "data_exfiltration",
+      "high_activity_volume"
+    ],
+    "mitre_techniques": [
+      {
+        "signal": "data_exfiltration",
+        "technique_id": "T1537",
+        "technique_name": "Transfer Data to Cloud Account",
+        "tactic": "Exfiltration"
+      },
+      {
+        "signal": "high_activity_volume",
+        "technique_id": "T1078",
+        "technique_name": "Valid Accounts",
+        "tactic": "Discovery"
+      }
+    ],
+    "features": {
+      "event_count": 16,
+      "login_count": 2,
+      "distinct_countries": 1,
+      "off_hours_ratio": 0.44,
+      "privesc_call_count": 0,
+      "total_bytes_transferred": 195653485
+    },
+    "event_ids": [
+      "bd3f9a7a-e393-48da-a381-4d6e121bad55",
+      "541603cd-bd54-4d25-851b-c550f08a4b58",
+      "3ad97b5a-a094-420e-9010-ae8a582cb148",
+      "5437e544-ff50-43d7-9dc4-43d203e7b395",
+      "838cd68f-6d7f-4935-995c-e8a6be106d97",
+      "d1b73444-d6f0-4d5e-beae-83b10bf3e3f2",
+      "fb649523-affe-4db8-9037-2299b0094b65",
+      "d15142f2-397f-4a3e-bf56-1aa9228b1817",
+      "360d1596-acef-4435-aff5-5220cf8662b2",
+      "2643a748-7e4a-450b-bfb2-ff62842be634",
+      "69f9d00c-defe-4b89-8ac2-761edabb0715",
+      "4e969827-d7fa-4b5d-ba05-460deaa64f87",
+      "6473786b-eb09-442d-bfd6-0b99410e7416",
+      "5c0b2bef-6d2b-40fc-8f3b-28a7794fb6bd",
+      "c8afd484-8c71-432d-926a-4658f3981830",
+      "c01a0f4a-ca37-4aef-ad07-2855df36bbad"
+    ]
+  },
+  {
+    "incident_id": "INC-user_010-2026-09-16",
+    "user": "user_010",
+    "day": "2026-09-16",
+    "risk_score": 75.7,
+    "severity": "Critical",
+    "signals": [
+      "geo_anomaly",
+      "off_hours_login",
+      "privilege_escalation"
+    ],
+    "mitre_techniques": [
+      {
+        "signal": "geo_anomaly",
+        "technique_id": "T1078",
+        "technique_name": "Valid Accounts",
+        "tactic": "Initial Access"
+      },
+      {
+        "signal": "off_hours_login",
+        "technique_id": "T1078.004",
+        "technique_name": "Valid Accounts: Cloud Accounts",
+        "tactic": "Initial Access"
+      },
+      {
+        "signal": "privilege_escalation",
+        "technique_id": "T1098",
+        "technique_name": "Account Manipulation",
+        "tactic": "Privilege Escalation"
+      }
+    ],
+    "features": {
+      "event_count": 15,
+      "login_count": 2,
+      "distinct_countries": 2,
+      "off_hours_ratio": 0.53,
+      "privesc_call_count": 4,
+      "total_bytes_transferred": 0
+    },
+    "event_ids": [
+      "4cce571a-55a7-42e6-bede-cd60c959d271",
+      "29e56717-934e-4f4e-8b42-4580f0cdc4fe",
+      "b2539392-acd7-4461-aa5f-167165a16567",
+      "23bfe806-b746-489e-ba9b-2fa170a32086",
+      "a45f9054-afe5-42d6-aa5b-762b0b11d680",
+      "f3f3f3c7-4395-4d7f-85e4-655805881ccd",
+      "d8c094cb-1d1c-4255-9d8b-07ead708e49b",
+      "d92e49b9-f176-4a18-8e00-a3f5b55f09df",
+      "b23e87b5-a529-4045-9781-5d355a93f129",
+      "2a6f038a-0a9b-46db-911c-38d0fbc2dfc9",
+      "3938aabb-c9a7-4eae-9fbe-9754c1b48add",
+      "f34d7d7f-8994-4cf1-955c-22cf6c37c6ff",
+      "dbd701d6-f388-49e6-a410-f54e1b1a7567",
+      "7e0a3636-4733-4c59-a36e-574fa4d6b676",
+      "09ad6f68-b310-459e-964a-b8cf7e6d8904"
+    ]
+  },
+  {
+    "incident_id": "INC-user_014-2026-09-17",
+    "user": "user_014",
+    "day": "2026-09-17",
+    "risk_score": 75.1,
+    "severity": "Critical",
+    "signals": [
+      "off_hours_login",
+      "privilege_escalation",
+      "high_activity_volume"
+    ],
+    "mitre_techniques": [
+      {
+        "signal": "off_hours_login",
+        "technique_id": "T1078.004",
+        "technique_name": "Valid Accounts: Cloud Accounts",
+        "tactic": "Initial Access"
+      },
+      {
+        "signal": "privilege_escalation",
+        "technique_id": "T1098",
+        "technique_name": "Account Manipulation",
+        "tactic": "Privilege Escalation"
+      },
+      {
+        "signal": "high_activity_volume",
+        "technique_id": "T1078",
+        "technique_name": "Valid Accounts",
+        "tactic": "Discovery"
+      }
+    ],
+    "features": {
+      "event_count": 16,
+      "login_count": 0,
+      "distinct_countries": 1,
+      "off_hours_ratio": 0.56,
+      "privesc_call_count": 7,
+      "total_bytes_transferred": 0
+    },
+    "event_ids": [
+      "fbd8335e-cd83-4915-8034-16f18751abc0",
+      "058c457a-b15b-4d4d-9a36-4215d56c9e93",
+      "520fd25e-c686-4c07-86bb-5dea8933e352",
+      "b7abc2c5-1c0a-4e87-9698-02103ba6bb80",
+      "6918113d-e503-4b8a-9bc9-31829347e499",
+      "e14e9010-110b-40c0-8a7f-714a7f5d915d",
+      "31cd1807-7d62-4c0b-a270-7e126d5ccdf3",
+      "8b4fe5fe-6d55-49ca-b073-a5f43a798601",
+      "9158fde8-b921-4a1d-915d-76ae1c03a0a3",
+      "a32e4f2e-e76f-44ee-b344-9d703fe58001",
+      "c4989487-15c1-4901-b2be-ba523c8d7232",
+      "9d71598d-826b-4a10-99e9-93cc559f47a6",
+      "db980ebc-c634-4ba3-b981-a2242b29bfc3",
+      "15a92085-e8dc-447f-8e0d-70b15e7d49f2",
+      "01dfbf73-97fc-4514-9743-e44aaf958dd7",
+      "cc4b45d9-e5c2-4910-9418-68f11e9af467"
+    ]
+  },
+  {
+    "incident_id": "INC-user_013-2026-09-16",
+    "user": "user_013",
+    "day": "2026-09-16",
+    "risk_score": 73.1,
+    "severity": "High",
+    "signals": [
+      "geo_anomaly",
+      "data_exfiltration"
+    ],
+    "mitre_techniques": [
+      {
+        "signal": "geo_anomaly",
+        "technique_id": "T1078",
+        "technique_name": "Valid Accounts",
+        "tactic": "Initial Access"
+      },
+      {
+        "signal": "data_exfiltration",
+        "technique_id": "T1537",
+        "technique_name": "Transfer Data to Cloud Account",
+        "tactic": "Exfiltration"
+      }
+    ],
+    "features": {
+      "event_count": 10,
+      "login_count": 1,
+      "distinct_countries": 2,
+      "off_hours_ratio": 0.4,
+      "privesc_call_count": 0,
+      "total_bytes_transferred": 135228027
+    },
+    "event_ids": [
+      "7282aa31-272d-4a84-b194-c431b7d9777d",
+      "4222f94e-1107-4531-8fb2-48caa523f044",
+      "655cbc0d-0e43-453f-bd7f-d869780b6e9d",
+      "04f52fea-ef77-478d-bf9a-d0f13d00ae8e",
+      "703bacdc-8959-41ef-b51a-306cddae435c",
+      "65401535-8f89-4f1c-bfb4-5d097be93c7f",
+      "6cabab47-0d81-44af-878e-feb5016d10f2",
+      "daf535d3-3fb3-427f-b520-1fdc6fa7990b",
+      "b18c0952-4467-4257-bc5e-03d1b8dcd67a",
+      "9bfec87b-d571-4966-99ef-59935b57281b"
+    ]
+  },
+  {
+    "incident_id": "INC-user_001-2026-09-18",
+    "user": "user_001",
+    "day": "2026-09-18",
+    "risk_score": 72.4,
+    "severity": "High",
+    "signals": [
+      "off_hours_login",
+      "data_exfiltration"
+    ],
+    "mitre_techniques": [
+      {
+        "signal": "off_hours_login",
+        "technique_id": "T1078.004",
+        "technique_name": "Valid Accounts: Cloud Accounts",
+        "tactic": "Initial Access"
+      },
+      {
+        "signal": "data_exfiltration",
+        "technique_id": "T1537",
+        "technique_name": "Transfer Data to Cloud Account",
+        "tactic": "Exfiltration"
+      }
+    ],
+    "features": {
+      "event_count": 14,
+      "login_count": 1,
+      "distinct_countries": 1,
+      "off_hours_ratio": 0.93,
+      "privesc_call_count": 0,
+      "total_bytes_transferred": 251876478
+    },
+    "event_ids": [
+      "41af8283-0dcc-493f-92ed-4f1f8b457a9b",
+      "e87bfe98-0659-4de6-b1e8-c89e1ed0a5f1",
+      "11b35208-d939-4075-bf0d-f7ffbfed0b8a",
+      "03666c71-3bce-47df-a93a-70c9fb829cda",
+      "5b7d7497-d38f-485f-a64f-512fb2f5db3b",
+      "c35781d1-15f5-491a-9626-cc74e281e1cc",
+      "2f2ec5c0-3485-485e-8d4a-43a1d7c8bbdb",
+      "9ec0b4ca-a3ee-47ad-a30d-0e9fc039fde2",
+      "0e92befb-ba84-4b23-abc2-df2f35781515",
+      "5a492a4f-7e6c-45d0-93bc-fa10bd20c9ad",
+      "c5112d83-c53e-4797-a75a-b85d771b2678",
+      "0c9fa011-0b03-42ed-841c-614822bf9e8a",
+      "7631c184-a0f8-49c6-8eec-f4717faa6188",
+      "2bf31d09-6227-46cf-983d-22330c5ea5fe"
+    ]
+  },
+  {
+    "incident_id": "INC-user_005-2026-09-21",
+    "user": "user_005",
+    "day": "2026-09-21",
+    "risk_score": 71.6,
+    "severity": "High",
+    "signals": [
+      "geo_anomaly",
+      "data_exfiltration"
+    ],
+    "mitre_techniques": [
+      {
+        "signal": "geo_anomaly",
+        "technique_id": "T1078",
+        "technique_name": "Valid Accounts",
+        "tactic": "Initial Access"
+      },
+      {
+        "signal": "data_exfiltration",
+        "technique_id": "T1537",
+        "technique_name": "Transfer Data to Cloud Account",
+        "tactic": "Exfiltration"
+      }
+    ],
+    "features": {
+      "event_count": 10,
+      "login_count": 1,
+      "distinct_countries": 2,
+      "off_hours_ratio": 0.5,
+      "privesc_call_count": 0,
+      "total_bytes_transferred": 134306723
+    },
+    "event_ids": [
+      "eb714723-2cd2-452e-b296-ea2433ac6dbf",
+      "ca318830-f925-4e71-985a-54e383f32cb5",
+      "cbac9626-3faf-4bb8-a55f-4a682f724a44",
+      "5af2ef92-f68f-451f-94a0-0b815c085931",
+      "b9edfc77-e727-4d21-ade4-840bbdbb7dec",
+      "0a126b41-9b52-4677-a66c-fd48268a6fec",
+      "c4e02508-d654-40d1-876d-ce77f91b0bba",
+      "205e8676-9649-47cb-96d1-e6176227dc4e",
+      "a48c9f16-d0f7-4a4a-9152-3d9ce0a32d94",
+      "6d3d3f3b-bd8a-405d-82e3-e1ab35d46e83"
+    ]
+  },
+  {
+    "incident_id": "INC-user_018-2026-09-18",
+    "user": "user_018",
+    "day": "2026-09-18",
+    "risk_score": 70.0,
+    "severity": "High",
+    "signals": [
+      "off_hours_login",
+      "data_exfiltration"
+    ],
+    "mitre_techniques": [
+      {
+        "signal": "off_hours_login",
+        "technique_id": "T1078.004",
+        "technique_name": "Valid Accounts: Cloud Accounts",
+        "tactic": "Initial Access"
+      },
+      {
+        "signal": "data_exfiltration",
+        "technique_id": "T1537",
+        "technique_name": "Transfer Data to Cloud Account",
+        "tactic": "Exfiltration"
+      }
+    ],
+    "features": {
+      "event_count": 9,
+      "login_count": 0,
+      "distinct_countries": 1,
+      "off_hours_ratio": 1.0,
+      "privesc_call_count": 0,
+      "total_bytes_transferred": 236457310
+    },
+    "event_ids": [
+      "e44e46a7-07f0-4c33-9348-f57568d59f6e",
+      "e49e30ef-485a-4433-bf65-985fe888bcef",
+      "15ceff6f-1a3b-4c77-acf5-8678c202a9fb",
+      "c10d6d4e-77c3-4816-8219-687f6307f983",
+      "99225c34-fc89-4dc7-8a5e-98821a892e88",
+      "4d8e4764-9f73-4173-b38b-a4e0195e48d6",
+      "4a098759-f475-44d3-a459-4b4e8e4c7266",
+      "491192b3-6590-4c28-9386-ef6b1fee9b98",
+      "7b39b834-e5b2-4205-a447-8d3b7be075c4"
+    ]
+  },
+  {
+    "incident_id": "INC-user_018-2026-09-19",
+    "user": "user_018",
+    "day": "2026-09-19",
+    "risk_score": 69.7,
+    "severity": "High",
+    "signals": [
+      "privilege_escalation"
+    ],
+    "mitre_techniques": [
+      {
+        "signal": "privilege_escalation",
+        "technique_id": "T1098",
+        "technique_name": "Account Manipulation",
+        "tactic": "Privilege Escalation"
+      }
+    ],
+    "features": {
+      "event_count": 12,
+      "login_count": 2,
+      "distinct_countries": 1,
+      "off_hours_ratio": 0.33,
+      "privesc_call_count": 6,
+      "total_bytes_transferred": 0
+    },
+    "event_ids": [
+      "d1258da8-5267-4ca1-99d2-52d06c6efafa",
+      "41ffc544-3a7b-4c68-b282-440cf31b00a2",
+      "f68365b2-f1b2-4587-a789-2aabf9bdc0e8",
+      "2936be0c-13f0-4e3e-b64e-a846b6815aeb",
+      "f0022e8b-4291-404e-a416-1ffcd1dbfb8c",
+      "610ba335-feb0-4115-aa9a-de957fee38dd",
+      "488d451f-aecd-4a69-a2a0-34c7721317ad",
+      "f268a322-0249-4dcd-a08a-c7c320b7d930",
+      "6a0b6e1a-b4cf-4d1c-b38b-a9b90e85b6a4",
+      "fac9e650-26cb-4e16-a85b-f9e067df9c20",
+      "cc68eadb-99ad-4d3c-b105-e25314b2b9b6",
+      "bf4b95e7-fb1a-455f-92cb-3cec2597c753"
+    ]
+  },
+  {
+    "incident_id": "INC-user_001-2026-09-09",
+    "user": "user_001",
+    "day": "2026-09-09",
+    "risk_score": 68.0,
+    "severity": "High",
+    "signals": [
+      "off_hours_login",
+      "data_exfiltration"
+    ],
+    "mitre_techniques": [
+      {
+        "signal": "off_hours_login",
+        "technique_id": "T1078.004",
+        "technique_name": "Valid Accounts: Cloud Accounts",
+        "tactic": "Initial Access"
+      },
+      {
+        "signal": "data_exfiltration",
+        "technique_id": "T1537",
+        "technique_name": "Transfer Data to Cloud Account",
+        "tactic": "Exfiltration"
+      }
+    ],
+    "features": {
+      "event_count": 13,
+      "login_count": 0,
+      "distinct_countries": 1,
+      "off_hours_ratio": 1.0,
+      "privesc_call_count": 0,
+      "total_bytes_transferred": 110408981
+    },
+    "event_ids": [
+      "608dca2b-08dd-4467-ab82-7f49b2b0c57b",
+      "58606e8c-d79e-4846-89df-552e28db5dee",
+      "dc72ea10-2002-4f70-928f-32d239d5d178",
+      "73b4b621-9774-451a-a174-fbe76695fb9f",
+      "d97d8636-7997-49d9-81ba-9d8d59f85c0f",
+      "c3504a29-9b09-44f9-a733-3ca96be270f7",
+      "eec69038-7454-44cd-a3d8-e6c2bd95b116",
+      "b3ef1c48-3a31-433a-a62d-731df4a69d53",
+      "fcf2d3e6-3d8e-41e5-981f-8286f5cdf487",
+      "3c2d9602-7fac-44fb-8350-64a8d21d2d34",
+      "226a1b30-d71a-448c-bed1-066af423455a",
+      "f4124167-b639-439b-92d6-4fb6302daaca",
+      "6978e203-1581-4bfe-a5dd-45f3711a9e48"
+    ]
+  },
+  {
+    "incident_id": "INC-user_006-2026-09-10",
+    "user": "user_006",
+    "day": "2026-09-10",
+    "risk_score": 67.4,
+    "severity": "High",
+    "signals": [
+      "off_hours_login",
+      "data_exfiltration"
+    ],
+    "mitre_techniques": [
+      {
+        "signal": "off_hours_login",
+        "technique_id": "T1078.004",
+        "technique_name": "Valid Accounts: Cloud Accounts",
+        "tactic": "Initial Access"
+      },
+      {
+        "signal": "data_exfiltration",
+        "technique_id": "T1537",
+        "technique_name": "Transfer Data to Cloud Account",
+        "tactic": "Exfiltration"
+      }
+    ],
+    "features": {
+      "event_count": 14,
+      "login_count": 2,
+      "distinct_countries": 1,
+      "off_hours_ratio": 0.79,
+      "privesc_call_count": 0,
+      "total_bytes_transferred": 132270480
+    },
+    "event_ids": [
+      "fdb298de-1353-4472-bd48-f656acd0b74d",
+      "35f0ee13-f3c0-4b98-81be-9a456b4feaaa",
+      "fbfd9455-2aee-4845-9205-07b475f16d36",
+      "eb4be449-1d27-4901-ae27-89691b9366eb",
+      "94a818b9-4b7b-4027-a4d2-5a3976257c28",
+      "dc5ecf22-e504-488a-9da7-0d5c1aeb8206",
+      "abea6286-9f5e-4b63-9322-3de6110ea6bc",
+      "f573056f-a8fa-4eec-9be5-cb08435aa6d9",
+      "f0c521e3-ad75-42b7-89b1-b9de629cf9b6",
+      "508ad73d-0a42-4882-bbea-79dde52f21c8",
+      "2f953870-8e07-416a-8bcc-0c34f0ae801b",
+      "db2cb93a-6820-4a4e-8d36-5d3eee8ce267",
+      "364fe489-ca34-4971-9a06-3e2e19a7002f",
+      "48aa900c-cc31-47c0-b5f4-e30b20ebd10d"
+    ]
+  },
+  {
+    "incident_id": "INC-user_004-2026-09-10",
+    "user": "user_004",
+    "day": "2026-09-10",
+    "risk_score": 66.5,
+    "severity": "High",
+    "signals": [
+      "off_hours_login",
+      "data_exfiltration"
+    ],
+    "mitre_techniques": [
+      {
+        "signal": "off_hours_login",
+        "technique_id": "T1078.004",
+        "technique_name": "Valid Accounts: Cloud Accounts",
+        "tactic": "Initial Access"
+      },
+      {
+        "signal": "data_exfiltration",
+        "technique_id": "T1537",
+        "technique_name": "Transfer Data to Cloud Account",
+        "tactic": "Exfiltration"
+      }
+    ],
+    "features": {
+      "event_count": 14,
+      "login_count": 1,
+      "distinct_countries": 1,
+      "off_hours_ratio": 0.86,
+      "privesc_call_count": 0,
+      "total_bytes_transferred": 186574438
+    },
+    "event_ids": [
+      "91490352-5a43-4101-a5cf-222a3c4b4063",
+      "6608b5d7-b5cf-41fd-9dd3-2a95eae177cd",
+      "f709d61f-ac65-4b08-b1d4-e52c9289441a",
+      "0792f06b-4401-4f63-9bbf-e8b087216703",
+      "623f743d-5445-4366-abf7-314150cf76d9",
+      "a668671b-8a7a-433d-8bef-4b3a9a59ed25",
+      "c23f6055-4126-4cc9-89de-e644b8b1c428",
+      "089562e8-6b9b-4009-85f2-2a5142bc15aa",
+      "54d51773-d774-4a85-b21a-57269bc4af01",
+      "f33309a3-a2ab-4e3c-8212-f92fbc9508ab",
+      "93afd1be-24aa-41fc-a130-a1bf5cfae9a1",
+      "1c5234a0-0f52-42f1-ade8-41592b203ddc",
+      "264726e9-01e0-4e36-9268-a94c5543dd01",
+      "c8cf747e-c52b-4054-845d-15fdea8087a2"
+    ]
+  },
+  {
+    "incident_id": "INC-user_004-2026-09-11",
+    "user": "user_004",
+    "day": "2026-09-11",
+    "risk_score": 65.8,
+    "severity": "High",
+    "signals": [
+      "off_hours_login",
+      "data_exfiltration"
+    ],
+    "mitre_techniques": [
+      {
+        "signal": "off_hours_login",
+        "technique_id": "T1078.004",
+        "technique_name": "Valid Accounts: Cloud Accounts",
+        "tactic": "Initial Access"
+      },
+      {
+        "signal": "data_exfiltration",
+        "technique_id": "T1537",
+        "technique_name": "Transfer Data to Cloud Account",
+        "tactic": "Exfiltration"
+      }
+    ],
+    "features": {
+      "event_count": 11,
+      "login_count": 1,
+      "distinct_countries": 1,
+      "off_hours_ratio": 0.82,
+      "privesc_call_count": 0,
+      "total_bytes_transferred": 205902802
+    },
+    "event_ids": [
+      "007ee437-5696-4a0c-98b3-f636798af7ac",
+      "96d4d26f-fa3e-471a-96ff-8d8d748c43be",
+      "785d4d1f-ad90-4aba-b424-930b5b6c49f9",
+      "f924ba54-249e-43f0-8214-15c3a3478621",
+      "a0dd839f-b9ee-4933-849c-12a17ffa869d",
+      "3bd52284-e653-4927-84d0-3427d60ef21f",
+      "1a449685-5075-4aac-ab38-6f7bb224ffdb",
+      "25896e90-9f7e-4f03-9218-e1faeacd7545",
+      "7efee34b-3ea4-4e85-8511-5334e173c392",
+      "4ccdacb4-4bda-4396-a5a8-98c422d3bcff",
+      "80ee888a-eda0-4530-b6da-c8b4cce0de44"
+    ]
+  },
+  {
+    "incident_id": "INC-user_019-2026-09-18",
+    "user": "user_019",
+    "day": "2026-09-18",
+    "risk_score": 65.8,
+    "severity": "High",
+    "signals": [
+      "off_hours_login",
+      "data_exfiltration"
+    ],
+    "mitre_techniques": [
+      {
+        "signal": "off_hours_login",
+        "technique_id": "T1078.004",
+        "technique_name": "Valid Accounts: Cloud Accounts",
+        "tactic": "Initial Access"
+      },
+      {
+        "signal": "data_exfiltration",
+        "technique_id": "T1537",
+        "technique_name": "Transfer Data to Cloud Account",
+        "tactic": "Exfiltration"
+      }
+    ],
+    "features": {
+      "event_count": 13,
+      "login_count": 1,
+      "distinct_countries": 1,
+      "off_hours_ratio": 0.54,
+      "privesc_call_count": 0,
+      "total_bytes_transferred": 154701473
+    },
+    "event_ids": [
+      "700d5c0e-367f-47f3-8ddc-9fc0df37131b",
+      "5abafc36-1e7e-4ec2-8766-89873a6535bf",
+      "3ec481db-7498-489d-9762-8b4be6e8b564",
+      "40564dc7-729f-4e73-977d-dc64e2bb09fa",
+      "2b24f134-6311-4717-8bf0-bce847f6e006",
+      "f485e0cc-8389-4396-b249-963bfd424e47",
+      "dac7bc4d-0bd1-45ea-aa2a-2218babd3462",
+      "76a81f5b-ce69-4b2a-8b3f-2a9fa7024c99",
+      "debc0072-d0bd-46da-8d50-ca528323c8a8",
+      "456a5b3b-a12d-42c4-9c5a-f5dad4534e55",
+      "0f1a7c00-e95d-4179-a2e3-8a27770665f5",
+      "1559e979-114d-4b06-b4c5-86b6237031be",
+      "caac29c8-dfa0-4ef9-8d85-34fbe3fa84d1"
+    ]
+  },
+  {
+    "incident_id": "INC-user_006-2026-09-16",
+    "user": "user_006",
+    "day": "2026-09-16",
+    "risk_score": 64.9,
+    "severity": "High",
+    "signals": [
+      "off_hours_login",
+      "data_exfiltration"
+    ],
+    "mitre_techniques": [
+      {
+        "signal": "off_hours_login",
+        "technique_id": "T1078.004",
+        "technique_name": "Valid Accounts: Cloud Accounts",
+        "tactic": "Initial Access"
+      },
+      {
+        "signal": "data_exfiltration",
+        "technique_id": "T1537",
+        "technique_name": "Transfer Data to Cloud Account",
+        "tactic": "Exfiltration"
+      }
+    ],
+    "features": {
+      "event_count": 13,
+      "login_count": 0,
+      "distinct_countries": 1,
+      "off_hours_ratio": 0.85,
+      "privesc_call_count": 0,
+      "total_bytes_transferred": 165206661
+    },
+    "event_ids": [
+      "52d76d8b-074f-48aa-b0c5-f560fe5f432f",
+      "dfa6354e-9e50-459b-960e-bbbdaace8566",
+      "e1b40f9f-60e7-40c9-8901-0c6da4a94fef",
+      "b13761fd-0c70-4c5d-9f56-5bdc7514b357",
+      "67f2c714-ab2c-42ab-ab64-60be9b7af715",
+      "9d7982e4-ef5e-4210-8792-4ece7c4faf05",
+      "0fbb8417-db12-4511-acbd-02dcf8a9ec40",
+      "26bc495d-342a-479d-8bcd-9f876ef1d1ed",
+      "b01e0ac4-bec3-4997-8d53-8048a7a95eab",
+      "bef18676-6108-4e63-aea5-866b8bbf9f17",
+      "ce59441b-b9bd-4fd5-bad1-c3434b12a5cf",
+      "25e176fd-fd31-4f69-bd85-783f7abbf17d",
+      "7ed5ff46-cb5a-4df9-b20f-fdc13d7a338c"
+    ]
+  },
+  {
+    "incident_id": "INC-user_001-2026-09-13",
+    "user": "user_001",
+    "day": "2026-09-13",
+    "risk_score": 64.8,
+    "severity": "High",
+    "signals": [
+      "off_hours_login",
+      "data_exfiltration"
+    ],
+    "mitre_techniques": [
+      {
+        "signal": "off_hours_login",
+        "technique_id": "T1078.004",
+        "technique_name": "Valid Accounts: Cloud Accounts",
+        "tactic": "Initial Access"
+      },
+      {
+        "signal": "data_exfiltration",
+        "technique_id": "T1537",
+        "technique_name": "Transfer Data to Cloud Account",
+        "tactic": "Exfiltration"
+      }
+    ],
+    "features": {
+      "event_count": 12,
+      "login_count": 0,
+      "distinct_countries": 1,
+      "off_hours_ratio": 0.83,
+      "privesc_call_count": 0,
+      "total_bytes_transferred": 175867823
+    },
+    "event_ids": [
+      "f977881d-59b9-4e7f-9f07-8b100a8389c8",
+      "6082a4a7-2475-42e7-8f4e-7fbbe1821214",
+      "f7ef7570-dddd-4bac-99f4-42a8b7aadbfe",
+      "18d3a9e5-04a7-4c33-be64-9bad775351bf",
+      "5519e485-7e7d-4765-b750-2d71bb7ac620",
+      "ba453b83-06fd-479e-aaa0-74774dfa0d60",
+      "b38400f5-65d8-40cc-bf94-a9776d8b8fdf",
+      "dcd95147-d712-4e83-930b-217dd13ec11b",
+      "b7a5ba4a-c720-4941-8b34-db8f031a4fd9",
+      "68feed64-6099-4a0f-a8d0-88e3e2ab0ef3",
+      "7387acd0-542b-4184-84ea-f213d3458303",
+      "4a0ade9c-82c8-41d9-899b-09accae7cb55"
+    ]
+  },
+  {
+    "incident_id": "INC-user_002-2026-09-09",
+    "user": "user_002",
+    "day": "2026-09-09",
+    "risk_score": 64.3,
+    "severity": "High",
+    "signals": [
+      "off_hours_login",
+      "privilege_escalation"
+    ],
+    "mitre_techniques": [
+      {
+        "signal": "off_hours_login",
+        "technique_id": "T1078.004",
+        "technique_name": "Valid Accounts: Cloud Accounts",
+        "tactic": "Initial Access"
+      },
+      {
+        "signal": "privilege_escalation",
+        "technique_id": "T1098",
+        "technique_name": "Account Manipulation",
+        "tactic": "Privilege Escalation"
+      }
+    ],
+    "features": {
+      "event_count": 13,
+      "login_count": 0,
+      "distinct_countries": 1,
+      "off_hours_ratio": 0.85,
+      "privesc_call_count": 3,
+      "total_bytes_transferred": 1522525
+    },
+    "event_ids": [
+      "0d8b5acf-ac95-4896-bb37-752c0c7436c9",
+      "7ac7dce1-f6f0-46e1-964c-982d8ba53024",
+      "cd611906-4c24-43dd-bb37-f87b63c776de",
+      "c59f18d8-2596-4e4e-88f6-d77251171575",
+      "32ee52b1-b444-4386-8d8c-cf680aa8b936",
+      "36a5f226-c773-47dc-b33f-7f70cc0f5396",
+      "d1e485d9-f4e4-4db3-8e59-4dc4c3ae0a20",
+      "1571cd25-7cca-4681-8c07-703bae9118f1",
+      "6ab42e4e-bff1-4ee6-9b1a-6de55ccd2c58",
+      "66dd9b74-0801-4f31-a38c-6134531273b2",
+      "e367b66f-f01b-44a7-b412-0d76e2a6014d",
+      "38cd8d19-9335-4f40-96c8-a87a2bbf6fdb",
+      "be34a5ed-0623-4648-8b66-df19a5eba7f2"
+    ]
+  },
+  {
+    "incident_id": "INC-user_018-2026-09-09",
+    "user": "user_018",
+    "day": "2026-09-09",
+    "risk_score": 63.8,
+    "severity": "High",
+    "signals": [
+      "off_hours_login",
+      "privilege_escalation"
+    ],
+    "mitre_techniques": [
+      {
+        "signal": "off_hours_login",
+        "technique_id": "T1078.004",
+        "technique_name": "Valid Accounts: Cloud Accounts",
+        "tactic": "Initial Access"
+      },
+      {
+        "signal": "privilege_escalation",
+        "technique_id": "T1098",
+        "technique_name": "Account Manipulation",
+        "tactic": "Privilege Escalation"
+      }
+    ],
+    "features": {
+      "event_count": 11,
+      "login_count": 1,
+      "distinct_countries": 1,
+      "off_hours_ratio": 0.91,
+      "privesc_call_count": 5,
+      "total_bytes_transferred": 421138
+    },
+    "event_ids": [
+      "a33a2b18-6bde-4b63-b0f2-f002eaf23b3c",
+      "030b936d-5dd7-49df-9322-7fa3df978285",
+      "fac4b8d0-fb13-440f-b83b-0893c210b8cf",
+      "225e8338-c1e0-4a66-aba0-77900b9d190a",
+      "76791121-9f97-49f0-9836-89a23038000f",
+      "27f895a2-4875-40f4-a8da-9ab9ad93ea41",
+      "e11af4ef-92bc-4828-b804-fdf6f884d7d1",
+      "730df4bf-7d68-4dba-9c92-6656d5da7e9e",
+      "d6b43008-aa7b-4440-a73b-6747c6be2bb7",
+      "a3ef2e74-86aa-4772-a939-7e659521ca8c",
+      "861bcf15-838b-473c-9e74-6738967968b7"
+    ]
+  },
+  {
+    "incident_id": "INC-user_005-2026-09-13",
+    "user": "user_005",
+    "day": "2026-09-13",
+    "risk_score": 63.8,
+    "severity": "High",
+    "signals": [
+      "off_hours_login",
+      "privilege_escalation"
+    ],
+    "mitre_techniques": [
+      {
+        "signal": "off_hours_login",
+        "technique_id": "T1078.004",
+        "technique_name": "Valid Accounts: Cloud Accounts",
+        "tactic": "Initial Access"
+      },
+      {
+        "signal": "privilege_escalation",
+        "technique_id": "T1098",
+        "technique_name": "Account Manipulation",
+        "tactic": "Privilege Escalation"
+      }
+    ],
+    "features": {
+      "event_count": 11,
+      "login_count": 2,
+      "distinct_countries": 1,
+      "off_hours_ratio": 0.91,
+      "privesc_call_count": 4,
+      "total_bytes_transferred": 0
+    },
+    "event_ids": [
+      "a6b546df-efdb-4ce9-8c80-c2ae50831990",
+      "0492c90b-ba7f-475b-b91a-ecf8423afcb1",
+      "34c8fb50-dc13-4301-bb8d-74cd21c33f7f",
+      "2cb0a4ae-5c63-44f1-a853-54d17767a414",
+      "b6bcc1a6-84c3-4a7f-96f7-57fc9057af7a",
+      "b37d1220-57c0-4594-adec-7fde594e6ff4",
+      "9bc277ac-aa63-4f9e-9922-ee42753eb88a",
+      "eda53b28-1e44-48c1-839a-18c437c6a907",
+      "0c01c297-2e60-43e4-bad5-3fff15aaf79c",
+      "afae8523-b282-467f-b0a9-46c2dd673bfe",
+      "1b315d4d-01ee-475f-bf89-dd9ca1a86fb1"
+    ]
+  },
+  {
+    "incident_id": "INC-user_008-2026-09-21",
+    "user": "user_008",
+    "day": "2026-09-21",
+    "risk_score": 62.8,
+    "severity": "High",
+    "signals": [
+      "privilege_escalation"
+    ],
+    "mitre_techniques": [
+      {
+        "signal": "privilege_escalation",
+        "technique_id": "T1098",
+        "technique_name": "Account Manipulation",
+        "tactic": "Privilege Escalation"
+      }
+    ],
+    "features": {
+      "event_count": 8,
+      "login_count": 0,
+      "distinct_countries": 1,
+      "off_hours_ratio": 0.25,
+      "privesc_call_count": 5,
+      "total_bytes_transferred": 340586
+    },
+    "event_ids": [
+      "34697698-ecb7-4ff0-9762-43a8f66667a8",
+      "902b7e3e-5775-4bff-a2b2-69f23a8de72a",
+      "e5134c56-a442-468a-a334-7b24f67658ee",
+      "4b285746-92eb-4433-8eae-e6e796dca02a",
+      "78c044d5-4f09-4ba8-9349-d2c7e6680b86",
+      "6ac4b8b0-903b-402d-9006-1f45166e8f04",
+      "8b30227b-a1f8-43d6-81d2-ee45ed239afd",
+      "c84f4f22-c4a9-49a9-9af1-b520fa2f10f6"
+    ]
+  },
+  {
+    "incident_id": "INC-user_003-2026-09-13",
+    "user": "user_003",
+    "day": "2026-09-13",
+    "risk_score": 61.5,
+    "severity": "High",
+    "signals": [
+      "privilege_escalation"
+    ],
+    "mitre_techniques": [
+      {
+        "signal": "privilege_escalation",
+        "technique_id": "T1098",
+        "technique_name": "Account Manipulation",
+        "tactic": "Privilege Escalation"
+      }
+    ],
+    "features": {
+      "event_count": 12,
+      "login_count": 0,
+      "distinct_countries": 1,
+      "off_hours_ratio": 0.33,
+      "privesc_call_count": 4,
+      "total_bytes_transferred": 245865
+    },
+    "event_ids": [
+      "a6dedaf3-3c65-45c2-94fb-895c61984fd9",
+      "4e037928-07cc-4ddc-8f78-8ceb5afa7523",
+      "634c8d4a-cbba-4b98-8814-a4eef870f948",
+      "1175108e-bcd2-400e-b1c0-18774eb6fcfd",
+      "730fa839-a3cf-4c9d-8c58-27a61d35d7a5",
+      "cd0d3540-2b31-4100-9bfc-9b9a0b84e71f",
+      "fe219ccd-f192-43fb-8f23-26bf94ad4aab",
+      "6c1a8dd0-4fed-4c2a-8e33-b32284e3a4f3",
+      "6de9719d-2d7b-4834-8f55-4c5eed8559f5",
+      "af2e8386-0d26-4915-b6bb-ea566c3571bf",
+      "5ed9dd41-0386-486c-a57b-5e605ba5be88",
+      "dcba3b56-a9df-495c-9c69-2171e69bca49"
+    ]
+  },
+  {
+    "incident_id": "INC-user_009-2026-09-11",
+    "user": "user_009",
+    "day": "2026-09-11",
+    "risk_score": 61.1,
+    "severity": "High",
+    "signals": [
+      "privilege_escalation"
+    ],
+    "mitre_techniques": [
+      {
+        "signal": "privilege_escalation",
+        "technique_id": "T1098",
+        "technique_name": "Account Manipulation",
+        "tactic": "Privilege Escalation"
+      }
+    ],
+    "features": {
+      "event_count": 9,
+      "login_count": 1,
+      "distinct_countries": 1,
+      "off_hours_ratio": 0.22,
+      "privesc_call_count": 4,
+      "total_bytes_transferred": 484512
+    },
+    "event_ids": [
+      "205db537-4ad6-41a6-b952-353059013cf5",
+      "4c806a1c-e4aa-412b-8c02-e43d08f49700",
+      "b36116a1-f48b-4b61-8378-590ecffc6f70",
+      "2026d84c-3ba7-4df2-92a9-47cee25936a6",
+      "0df67685-4965-4546-b8ac-2fe973d7e524",
+      "e38060ae-f695-4d6c-ae01-3d1fdf10d460",
+      "123f4914-916b-4247-bd30-e069dc572e9a",
+      "05b71155-a63b-45c6-82be-43216291d146",
+      "47bfda7d-77d4-4397-8cdf-e8eefe537cdd"
+    ]
+  },
+  {
+    "incident_id": "INC-user_016-2026-09-11",
+    "user": "user_016",
+    "day": "2026-09-11",
+    "risk_score": 60.8,
+    "severity": "High",
+    "signals": [
+      "geo_anomaly",
+      "off_hours_login"
+    ],
+    "mitre_techniques": [
+      {
+        "signal": "geo_anomaly",
+        "technique_id": "T1078",
+        "technique_name": "Valid Accounts",
+        "tactic": "Initial Access"
+      },
+      {
+        "signal": "off_hours_login",
+        "technique_id": "T1078.004",
+        "technique_name": "Valid Accounts: Cloud Accounts",
+        "tactic": "Initial Access"
+      }
+    ],
+    "features": {
+      "event_count": 11,
+      "login_count": 3,
+      "distinct_countries": 2,
+      "off_hours_ratio": 0.82,
+      "privesc_call_count": 0,
+      "total_bytes_transferred": 1219960
+    },
+    "event_ids": [
+      "f4de25f0-f181-496a-abf0-e6b9e8cdbb9c",
+      "37d4c18e-cc4a-424f-b0dd-87ce954314d8",
+      "ae2b8da5-c9aa-4981-a60d-0f6bb9bbd638",
+      "1d87d8e0-3f35-484c-b9d3-b60a8c1622f1",
+      "9dcddccf-ad5b-49be-bdc5-a4d53cee8eef",
+      "de90b5ca-686f-4a5d-82fa-062406e35c07",
+      "9c2d16d6-8793-415b-9966-40436db8a478",
+      "2bf1bec3-52ba-4dde-8b7c-90c675c77464",
+      "3cc6f5ce-4951-43b8-8e24-8fb5afbe0dd4",
+      "b084c757-cab2-4cd8-80c6-68af8b25fdd8",
+      "583b9bea-379d-4427-b5ca-ed272c69af21"
+    ]
+  },
+  {
+    "incident_id": "INC-user_010-2026-09-18",
+    "user": "user_010",
+    "day": "2026-09-18",
+    "risk_score": 57.6,
+    "severity": "High",
+    "signals": [
+      "privilege_escalation"
+    ],
+    "mitre_techniques": [
+      {
+        "signal": "privilege_escalation",
+        "technique_id": "T1098",
+        "technique_name": "Account Manipulation",
+        "tactic": "Privilege Escalation"
+      }
+    ],
+    "features": {
+      "event_count": 9,
+      "login_count": 0,
+      "distinct_countries": 1,
+      "off_hours_ratio": 0.33,
+      "privesc_call_count": 3,
+      "total_bytes_transferred": 964546
+    },
+    "event_ids": [
+      "a2c5abb6-5a06-465a-8fdb-57ac45407bb3",
+      "aada1cdc-4d13-4a59-8022-942045815bf0",
+      "d2c6ff6d-76af-4847-b04d-590401995ebc",
+      "3e0ea2fb-8726-4c3e-8963-6b8a3d4a3993",
+      "e8112db5-852c-4449-860c-0e3818167f0b",
+      "9bc50ef1-51f3-4acc-814c-db57a7fa9254",
+      "7f48a7b5-ec45-4cb2-800f-4c93306bf1fc",
+      "1f7be793-acf4-41d7-9380-cbec6d27d5ae",
+      "e1f9b560-f49b-4630-93d5-339cc1141d60"
+    ]
+  },
+  {
+    "incident_id": "INC-user_014-2026-09-19",
+    "user": "user_014",
+    "day": "2026-09-19",
+    "risk_score": 53.3,
+    "severity": "Medium",
+    "signals": [
+      "geo_anomaly"
+    ],
+    "mitre_techniques": [
+      {
+        "signal": "geo_anomaly",
+        "technique_id": "T1078",
+        "technique_name": "Valid Accounts",
+        "tactic": "Initial Access"
+      }
+    ],
+    "features": {
+      "event_count": 6,
+      "login_count": 2,
+      "distinct_countries": 2,
+      "off_hours_ratio": 0.17,
+      "privesc_call_count": 0,
+      "total_bytes_transferred": 0
+    },
+    "event_ids": [
+      "edb7eb36-5107-41c1-94c7-d637df3d7991",
+      "878f6302-9154-437e-a32f-ed951b9c97ae",
+      "c81e449d-81de-4794-8f15-f5b85b59cc12",
+      "d4527f53-d8ca-44e2-9041-d48ee314046a",
+      "75cc494d-d58e-4d5b-9dcc-0ac188323a82",
+      "95b1c5cd-9eb5-4842-8b63-555a90232933"
+    ]
+  },
+  {
+    "incident_id": "INC-user_007-2026-09-13",
+    "user": "user_007",
+    "day": "2026-09-13",
+    "risk_score": 51.1,
+    "severity": "Medium",
+    "signals": [
+      "geo_anomaly"
+    ],
+    "mitre_techniques": [
+      {
+        "signal": "geo_anomaly",
+        "technique_id": "T1078",
+        "technique_name": "Valid Accounts",
+        "tactic": "Initial Access"
+      }
+    ],
+    "features": {
+      "event_count": 4,
+      "login_count": 2,
+      "distinct_countries": 2,
+      "off_hours_ratio": 0.25,
+      "privesc_call_count": 0,
+      "total_bytes_transferred": 48583
+    },
+    "event_ids": [
+      "c8d0bec8-4335-4ab4-b6af-281e35cbd2a8",
+      "f576d932-a477-4805-a822-02b0f243f4e3",
+      "19f6e120-a4ec-4b4b-8f33-1d263fa89403",
+      "0ba55615-aa35-4562-826e-8165c9d5ff5d"
+    ]
+  },
+  {
+    "incident_id": "INC-user_002-2026-09-18",
+    "user": "user_002",
+    "day": "2026-09-18",
+    "risk_score": 50.4,
+    "severity": "Medium",
+    "signals": [
+      "geo_anomaly"
+    ],
+    "mitre_techniques": [
+      {
+        "signal": "geo_anomaly",
+        "technique_id": "T1078",
+        "technique_name": "Valid Accounts",
+        "tactic": "Initial Access"
+      }
+    ],
+    "features": {
+      "event_count": 9,
+      "login_count": 2,
+      "distinct_countries": 2,
+      "off_hours_ratio": 0.44,
+      "privesc_call_count": 0,
+      "total_bytes_transferred": 929764
+    },
+    "event_ids": [
+      "6c92a65c-a813-46cb-b8e9-adb49bfefa71",
+      "d264d1dd-a531-472c-9c8f-5727942dd4c6",
+      "ce901cd0-c6df-49a3-8aac-aa2d6019ea7d",
+      "dd8c0da4-a252-430c-9079-7d742212520e",
+      "ad468fe6-e47b-4dde-9437-3d5bdae93d35",
+      "73b866b9-a5c0-4577-a7f6-77fb58213487",
+      "742083f6-1964-44ac-8fbd-6d21409c9d21",
+      "4f0fd0d0-cd64-4ea2-9ce4-55b44f3518f9",
+      "2d1f47bf-b192-4079-8cad-5ea30ec5125f"
+    ]
+  },
+  {
+    "incident_id": "INC-user_015-2026-09-15",
+    "user": "user_015",
+    "day": "2026-09-15",
+    "risk_score": 48.2,
+    "severity": "Medium",
+    "signals": [
+      "geo_anomaly"
+    ],
+    "mitre_techniques": [
+      {
+        "signal": "geo_anomaly",
+        "technique_id": "T1078",
+        "technique_name": "Valid Accounts",
+        "tactic": "Initial Access"
+      }
+    ],
+    "features": {
+      "event_count": 8,
+      "login_count": 2,
+      "distinct_countries": 2,
+      "off_hours_ratio": 0.5,
+      "privesc_call_count": 0,
+      "total_bytes_transferred": 151948
+    },
+    "event_ids": [
+      "9041b297-2b1f-4bdb-b27f-602d01997ae2",
+      "1eb54403-7aa9-417d-b334-4f5dac0fd0b6",
+      "1bbc30d9-3fea-4b29-bf42-5c78b9ec3519",
+      "7aaaa989-a143-4124-830f-4d30f0831aa9",
+      "5cf34c33-84be-4e77-9204-f462c73bcccc",
+      "ca8eece1-6ef8-43eb-9a0c-fd80ba28f307",
+      "6cc08cee-6a4f-4808-bc26-ee68ffbc3b87",
+      "87598db8-bec1-42bd-8cf3-65f6f11e9a0c"
+    ]
+  },
+  {
+    "incident_id": "INC-user_006-2026-09-20",
+    "user": "user_006",
+    "day": "2026-09-20",
+    "risk_score": 48.0,
+    "severity": "Medium",
+    "signals": [
+      "geo_anomaly",
+      "off_hours_login"
+    ],
+    "mitre_techniques": [
+      {
+        "signal": "geo_anomaly",
+        "technique_id": "T1078",
+        "technique_name": "Valid Accounts",
+        "tactic": "Initial Access"
+      },
+      {
+        "signal": "off_hours_login",
+        "technique_id": "T1078.004",
+        "technique_name": "Valid Accounts: Cloud Accounts",
+        "tactic": "Initial Access"
+      }
+    ],
+    "features": {
+      "event_count": 5,
+      "login_count": 1,
+      "distinct_countries": 2,
+      "off_hours_ratio": 0.8,
+      "privesc_call_count": 0,
+      "total_bytes_transferred": 349396
+    },
+    "event_ids": [
+      "59adb4c1-5a1f-45d7-bcb0-a4d478ba6964",
+      "27687255-8cff-44a1-a263-92dd5fccd9e6",
+      "8064cf8a-0bd9-4e26-ba92-b73558692930",
+      "837ee3cd-d6ba-46c4-922d-9fdff2eb5281",
+      "75ff0fa1-b350-4de7-af50-702b93fcf9dc"
+    ]
+  },
+  {
+    "incident_id": "INC-user_005-2026-09-16",
+    "user": "user_005",
+    "day": "2026-09-16",
+    "risk_score": 47.7,
+    "severity": "Medium",
+    "signals": [
+      "geo_anomaly",
+      "off_hours_login"
+    ],
+    "mitre_techniques": [
+      {
+        "signal": "geo_anomaly",
+        "technique_id": "T1078",
+        "technique_name": "Valid Accounts",
+        "tactic": "Initial Access"
+      },
+      {
+        "signal": "off_hours_login",
+        "technique_id": "T1078.004",
+        "technique_name": "Valid Accounts: Cloud Accounts",
+        "tactic": "Initial Access"
+      }
+    ],
+    "features": {
+      "event_count": 3,
+      "login_count": 1,
+      "distinct_countries": 2,
+      "off_hours_ratio": 0.67,
+      "privesc_call_count": 0,
+      "total_bytes_transferred": 0
+    },
+    "event_ids": [
+      "5b2b1bdb-c868-4f38-97c9-aa5d4bc4fce8",
+      "ae64f350-06dc-427b-b6e8-d7e17a411379",
+      "8bc62be1-07de-481b-b0c0-9d0372a2561f"
+    ]
+  },
+  {
+    "incident_id": "INC-user_001-2026-09-19",
+    "user": "user_001",
+    "day": "2026-09-19",
+    "risk_score": 47.4,
+    "severity": "Medium",
+    "signals": [
+      "geo_anomaly"
+    ],
+    "mitre_techniques": [
+      {
+        "signal": "geo_anomaly",
+        "technique_id": "T1078",
+        "technique_name": "Valid Accounts",
+        "tactic": "Initial Access"
+      }
+    ],
+    "features": {
+      "event_count": 5,
+      "login_count": 2,
+      "distinct_countries": 2,
+      "off_hours_ratio": 0.4,
+      "privesc_call_count": 0,
+      "total_bytes_transferred": 357872
+    },
+    "event_ids": [
+      "daf46dae-d781-46c8-9d57-d575f3688328",
+      "ef085189-a39d-4332-8051-c874ed5ef072",
+      "638c7dc7-3c1c-4c6d-afb6-67366fcca30b",
+      "cc8e5ca8-a7d0-4f31-9fde-dc16606560ca",
+      "7ecf7502-950c-4c7e-9ea6-d9d812297474"
+    ]
+  },
+  {
+    "incident_id": "INC-user_007-2026-09-14",
+    "user": "user_007",
+    "day": "2026-09-14",
+    "risk_score": 47.1,
+    "severity": "Medium",
+    "signals": [
+      "geo_anomaly",
+      "off_hours_login"
+    ],
+    "mitre_techniques": [
+      {
+        "signal": "geo_anomaly",
+        "technique_id": "T1078",
+        "technique_name": "Valid Accounts",
+        "tactic": "Initial Access"
+      },
+      {
+        "signal": "off_hours_login",
+        "technique_id": "T1078.004",
+        "technique_name": "Valid Accounts: Cloud Accounts",
+        "tactic": "Initial Access"
+      }
+    ],
+    "features": {
+      "event_count": 5,
+      "login_count": 1,
+      "distinct_countries": 2,
+      "off_hours_ratio": 0.6,
+      "privesc_call_count": 0,
+      "total_bytes_transferred": 455872
+    },
+    "event_ids": [
+      "1591d195-3e74-48c1-8971-99a9ae9400f2",
+      "e7cb1a9a-35fd-41c4-9c6f-e66dd662cac3",
+      "40bd35af-bc07-488f-abae-910c7c8407d7",
+      "b368ed16-d39d-46f4-89e3-1fbb296fc57b",
+      "c6019feb-1c4b-40b5-8e27-e5d284985fee"
+    ]
+  },
+  {
+    "incident_id": "INC-user_009-2026-09-12",
+    "user": "user_009",
+    "day": "2026-09-12",
+    "risk_score": 46.4,
+    "severity": "Medium",
+    "signals": [
+      "geo_anomaly",
+      "off_hours_login"
+    ],
+    "mitre_techniques": [
+      {
+        "signal": "geo_anomaly",
+        "technique_id": "T1078",
+        "technique_name": "Valid Accounts",
+        "tactic": "Initial Access"
+      },
+      {
+        "signal": "off_hours_login",
+        "technique_id": "T1078.004",
+        "technique_name": "Valid Accounts: Cloud Accounts",
+        "tactic": "Initial Access"
+      }
+    ],
+    "features": {
+      "event_count": 3,
+      "login_count": 1,
+      "distinct_countries": 2,
+      "off_hours_ratio": 0.67,
+      "privesc_call_count": 0,
+      "total_bytes_transferred": 379160
+    },
+    "event_ids": [
+      "1da8b05a-fea6-4f29-8f21-7fdbac7e666a",
+      "5c2350f4-e7ed-443c-9d45-f660be1ec8c9",
+      "1202daba-6e11-4e00-8c87-f38b0f67efe9"
+    ]
+  }
+]
