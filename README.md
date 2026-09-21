@@ -1,5 +1,13 @@
 # AI-Powered Cloud SOC & Threat Detection Platform
 
+> 🚀 **Live Demo:** [SOC Dashboard](https://ai-powered-cloud-soc-utrfqwnhf5r9u58hlnmo65.streamlit.app/)
+
+> 🔗 **Backend API:** [FastAPI Backend](https://ai-powered-cloud-soc.onrender.com)
+
+---
+
+# AI-Powered Cloud SOC & Threat Detection Platform
+
 A cloud security monitoring platform that ingests AWS-style security logs,
 detects anomalous authentication/IAM/data-access behavior using unsupervised
 machine learning, maps detections to MITRE ATT&CK, computes a weighted risk
