@@ -2,7 +2,7 @@
 Streamlit SOC dashboard. Talks to the FastAPI backend over HTTP.
 Run the API first (uvicorn src.api:app), then: streamlit run dashboard/app.py
 """
-
+import os
 import requests
 import streamlit as st
 
